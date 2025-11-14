@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💄 PRO Cosmetics</h1>
+            <div class="user-info">
+                <span id="user-name"></span>
+                <button id="cart-btn">🛒 <span id="cart-count">0</span></button>
+            </div>
+        </header>
+
+        <nav class="categories">
+            <button class="category-btn active" data-category="all">Все товары</button>
+            <button class="category-btn" data-category="skincare">Уход за кожей</button>
+            <button class="category-btn" data-category="makeup">Макияж</button>
+            <button class="category-btn" data-category="hair">Волосы</button>
+        </nav>
+
+        <main>
+            <div class="products-grid" id="products-grid">
+                <!-- Товары будут загружаться здесь -->
+            </div>
+        </main>
+
+        <!-- Модальное окно корзины -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Ваша корзина</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <strong>Итого: <span id="total-price">0</span> руб.</strong>
+                    <button id="checkout-btn">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

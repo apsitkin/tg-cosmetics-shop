@@ -1,0 +1,15 @@
+{
+  "name": "cosmetics-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Telegram Cosmetics Shop",
+  "scripts": {
+    "build": "echo 'Building frontend'",
+    "start": "npx serve -s . -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  },
+  "keywords": ["telegram", "webapp", "cosmetics"],
+  "author": "Your Name",
+  "license": "MIT"
+}
